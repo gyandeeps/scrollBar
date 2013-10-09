@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Scrollbar</title>
+        <script language="JavaScript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script language="JavaScript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script language="JavaScript" src="../scrollBar.js"></script>
+        <link rel="stylesheet" type="text/css" href="../scrollBar.css">
+        <script language="JavaScript">
+        /**
+            Initial setup before we call the API
+        */
+        $(document).ready(function(){
+            //Populate the text area
+            var testDiv = $("#testDiv")[0];
+            var noRows = 60;
+            $(testDiv).width(25 * noRows);
+            for(var i = 0; i < noRows; i++){
+                var node = "<div class ='testItem'><span>"+ i +"</span></div>";
+                $(testDiv).append(node);
+            }
+            //prepare the options to be passed to the API
+            var options = {
+                scrollContainerElem : $("#container")[0]
+                ,contentElem : $("#testDiv")[0]
+                ,contentContainerElem : $("#testArea")[0]
+            };
+            //Call to the API
+            var dragHandle = $.mpScrollBar(options);
+              
+        });
+        </script>
+    </head>
+
+    <body>
+            <div id="testArea" class="testArea">
+        <div id="testDiv" class = "testDiv">
+        
+        </div>
+    </div>
+    
+    <div id="container" class="container">
+ 
+    </div>
+    </body>
+</html>
