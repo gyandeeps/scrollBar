@@ -1,0 +1,51 @@
+.container{
+    height:50px;
+    width:600px;
+    border:1px solid;
+    border-color:red;
+    margin:30px;
+}
+
+.testArea{
+    height:35px;
+    width:600px;
+    overflow:hidden;
+    margin:30px;
+    border:1px solid;
+    border-color:red;
+}
+
+.drag{
+    border:1px solid;
+    margin:0px 0px 0px 0px;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.item{
+    margin:1px 1px 1px 1px;
+    border:1px solid;
+    border-color:orange;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.testItem{
+    width: 25px;
+    height: 25px;
+    display:inline-block;    
+}
+
+.icon-down{
+    background:url("http://www.designer-daily.com/wp-content/uploads/2009/05/web-development-icons.jpg") 121px 85px;
+    display:inline-block;
+    height:25px;
+    width:25px;
+}
+
+.icon-up{
+    background:url("http://www.designer-daily.com/wp-content/uploads/2009/05/web-development-icons.jpg") 319px 164px;
+    display:inline-block;
+    height:25px;
+    width:25px;
+}
